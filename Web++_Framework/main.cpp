@@ -1,14 +1,13 @@
 ﻿// Web++_Framework.cpp : Defines the entry point for the application.
 //
 
-#include "Web++.h"
+#include "Web++ServerSide/Web++.h"
 
 using namespace std;
-int port = 90;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	cout << "Hello Server!" << endl;
 	asio::io_context context; 
 	WebPlusPlus::InitServer(context, {});
 
